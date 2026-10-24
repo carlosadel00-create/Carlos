@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carlos - Link in Bio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            -webkit-tap-highlight-color: transparent; 
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: #0f172a; 
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding: 40px 20px;
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #38bdf8;
+            box-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
+            transition: transform 0.3s ease;
+        }
+        
+        .profile-img:hover {
+            transform: scale(1.05);
+        }
+
+        .name {
+            font-size: 26px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+            margin-bottom: 5px;
+        }
+
+        .links {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+
+        .link-btn {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 16px;
+            background: #1e293b;
+            color: #f8fafc;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+            border-radius: 12px;
+            border: none;
+            outline: none;
+            transition: all 0.1s ease;
+            box-shadow: 0 6px 0 #070b14, 0 8px 15px rgba(0, 0, 0, 0.4);
+            transform: translateY(0);
+        }
+
+        .link-btn i {
+            margin-right: 12px;
+            font-size: 24px;
+        }
+
+        .link-btn.tiktok:hover { box-shadow: 0 6px 0 #000000, 0 0 15px rgba(255, 0, 80, 0.5); }
+        .link-btn.instagram:hover { box-shadow: 0 6px 0 #833ab4, 0 0 15px rgba(193, 53, 132, 0.5); }
+        .link-btn.whatsapp:hover { box-shadow: 0 6px 0 #128c7e, 0 0 15px rgba(37, 211, 102, 0.5); }
+
+        .link-btn:active {
+            box-shadow: 0 0 0 #070b14, 0 0 0 rgba(0, 0, 0, 0.4);
+            transform: translateY(6px);
+        }
+
+        .link-btn.tiktok i { color: #ff0050; text-shadow: 1px 1px 0 #00f2fe; }
+        .link-btn.instagram i { color: #e1306c; }
+        .link-btn.whatsapp i { color: #25d366; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="https://i.postimg.cc/QxKWgNjv/1756898639628.jpg" alt="Carlos" class="profile-img">
+        
+        <h1 class="name">Carlos</h1>
+
+        <div class="links">
+            <!-- تم تعديل الرابط لتجنب أي أخطاء في المتصفحات -->
+            <a href="https://www.tiktok.com/@y5reb.batk..ana..z3lan?_r=1&amp;_t=ZS-9ApUz4g6xBx" target="_blank" class="link-btn tiktok">
+                <i class="fab fa-tiktok"></i> TikTok
+            </a>
+            
+            <a href="https://www.instagram.com/0_carlos_adel_0?srtk=eGg4cHFqeHhtcDg4" target="_blank" class="link-btn instagram">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+            
+            <a href="https://wa.me/qr/Z47QCJNAQE4OI1" target="_blank" class="link-btn whatsapp">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
